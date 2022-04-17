@@ -9,4 +9,4 @@ receivers:
       - send_resolved: true
         username: 'Sistema Orbit'
         channel: 'orbit'
-        api_url: 'https://hooks.slack.com/services/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'
+        api_url: 'https://hooks.slack.com/services/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'
