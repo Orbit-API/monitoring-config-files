@@ -1,32 +1,12 @@
 route:
   receiver: 'slack'
   group_wait: 3s
-  group_interval: 5s
+  group_interval: 5m
 
 receivers:
   - name: 'slack'
     slack_configs:
       - send_resolved: true
-        username: 'fabricio.santos43'
+        username: 'Sistema Orbit'
         channel: 'orbit'
-        api_url: 'https://hooks.slack.com/services/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'
-
-
-
-
-# route:
-#   group_by: ['alertname']
-#   group_wait: 30s
-#   group_interval: 5m
-#   repeat_interval: 1h
-#   receiver: 'web.hook'
-# receivers:
-#   - name: 'web.hook'
-#     webhook_configs:
-#       - url: 'http://127.0.0.1:5001/'
-# inhibit_rules:
-#   - source_match:
-#       severity: 'critical'
-#     target_match:
-#       severity: 'warning'
-#     equal: ['alertname', 'dev', 'instance']
+        api_url: 'https://hooks.slack.com/services/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'
